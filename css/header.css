@@ -3,7 +3,7 @@ a{
 }
 /* header section */
 .header_container{
-    background-color: rgba(224, 224, 224, 0.5);
+    background-color: rgba(224, 224, 224);
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -84,6 +84,7 @@ a{
     position: fixed;
     display: none;
     left:67%;
+    border-radius: 10px;
 }
 .product_dropdown>a{
     text-align: center;
@@ -94,7 +95,7 @@ a{
     display: block;
   }
   .product_dropdown>a:hover{
-    background-color: #f4af47;
+    background-color: #aaaaaa;
   }
 .product_nav_heading:hover>.product_dropdown {
     display: block;

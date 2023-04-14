@@ -1,7 +1,10 @@
 .footer_container{
-    background-color: gray;
+    background-color: rgb(237, 149, 91);
 }
-
+.footer_content_left{
+    /* border: 2px solid black; */
+    float: left;
+}
 .footer_content{
     display: flex;
     align-items: center;
@@ -13,14 +16,14 @@
     font-size: 100;
 }
 .footer_logo{
-    padding-left: 30px;
-    width: 150px;
-    height: 70px;
+    padding: 10px;
+    width: 120px;
+    height: 80px;
     cursor: pointer;
     margin-bottom: 5px;
 }
 .footer_content_left_subheading-office-heading,.footer_content_left_subheading-address-heading{
-    padding: 15px;
+    padding: 10px;
     font-size: 20px;
 }
 .footer_content_left_subheading-address-content, .footer_content_left_subheading-office-content{

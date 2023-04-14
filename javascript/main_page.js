@@ -1,7 +1,5 @@
-
 // on scroll header transparent
 window.onscroll = function() {myFunction()};
-
 function myFunction() {
 if (document.documentElement.scrollTop > 800) {
     document.getElementById("nav_bar").className = "on_scroll";

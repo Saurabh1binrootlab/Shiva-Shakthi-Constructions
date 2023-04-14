@@ -1,4 +1,3 @@
-
 src="https://smtpjs.com/v3/smtp.js"
 
 // footer contact us working
@@ -10,8 +9,8 @@ function sendEmail() {
   To : "saurabhchaudhary@binrootlab.com",
   From : document.getElementById("email").value,
   Subject : "Enquiry",
-  Body : "name:" + document.getElementById("name").value
-          + "<br> Email: " + document.getElementById("email").value
+  Body : "ame:" + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").valuen
           + "<br> Message: " + document.getElementById("message").value
 }).then(
 message => alert("massage sent successfully")
