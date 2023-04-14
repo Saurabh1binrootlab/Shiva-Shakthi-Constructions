@@ -1,0 +1,215 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: Helvetica;
+}
+a{
+    text-decoration: none;
+}
+/* header section */
+.header_container{
+    background-color: #f8f8f8;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    z-index: 1;
+    transition: 0.4s;
+    scroll-padding-top: var(--scroll-padding, 50px);
+    /* border: 2px solid black; */
+}
+.header_logo{
+    padding-left: 30px;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 4%;
+    /* border: 2px solid black; */
+}
+#nav_item{
+    /* border: 2px solid black; */
+    display: inline-block;
+    position: relative;
+    margin-right:25px;
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    justify-content: center;
+    font-weight:normal;
+    font-size: 13px;
+    font-family: Helvetica;
+}
+#nav_item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #e99968;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#nav_item:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+  
+#nav_item:hover{
+    color: rgb(0, 0, 0);
+}
+/* product dropdown menu */
+.product_dropdown{
+    position: fixed;
+    display: none;
+    left:67%;
+}
+.product_dropdown>a{
+    color: black;
+    background-color: #d1d2d2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .product_dropdown>a:hover{
+    background-color: #f4af47;
+  }
+.product_nav_heading:hover>.product_dropdown {
+    display: block;
+  }
+  /* sector dropdown menu */
+.sectors_dropdown{
+    position: fixed;
+    display: none;
+}
+.sectors_dropdown>a{
+    color: black;
+    background-color: #d1d2d2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.sectors_dropdown>a:hover{
+    background-color: #f4af47;
+}
+.sectors_nav_heading:hover>.sectors_dropdown {
+    display: block;
+}
+/* map iframe css */
+.empty_space{
+    width: 100%;
+    height: 95px;
+    background-color: rgb(255, 255, 255);
+}
+.heading_title_top{
+    margin-top: 40px;
+    margin-bottom:20px ;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+.map_location{
+    margin-left: 70px;
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+}
+/* contact information css */
+.Contact_heading_left{
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: 80px;
+    margin-top: 30px;
+    line-height: 2rem;
+    margin-bottom:10px;
+}
+.Contact_heading_right{
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom:10px;
+    grid-area:  1 / 3 / 2 / 6;
+}
+.Contact_heading_right>h1{
+    margin-left: 15px;
+}
+.para_1{
+    word-spacing: 2px;
+}
+.para_2,.para_3,.para_4,.para_5,.para_6{
+    padding: 5px;
+}
+.contact_area_div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+}
+/* Form css */
+.input_contact , .textarea_contact{
+    display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  rgb(235, 235, 235);
+	box-shadow: 0 1px 0 0 rgba(241, 154, 24, 0.993);
+	border: none;
+	resize: none;
+    font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	padding: 18px;
+}
+.input_contact {
+    height: 55px;
+    width: 400px;
+	margin: 15px;
+}
+.textarea_contact{
+    height: 200px;
+    width: 600px;
+	margin: 20px 20px 20px 15px;
+}
+.submit_contact{
+    border-radius: 3px;
+	background-color:  #676767;
+	color: #080808;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 250px;
+}
+/* footer section */
+footer{
+    background-color: #747272;
+    width: 100%;
+}
+.footer_content_left_heading{
+    font-size: 50;
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+.footer_logo{
+    margin-top: 20px;
+    padding-left: 30px;
+    margin-left: 30px;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
