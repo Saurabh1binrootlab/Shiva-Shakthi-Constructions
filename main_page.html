@@ -5,12 +5,14 @@
     <title>Shiva Shakthi Constructions</title>
     <link rel="icon" href="./assets/logo_shiva.png" type="image/icon type">
     <link rel="stylesheet" href="./css/home_page_main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!--header-->
     <section id="header_page">
-        <div class="header_container" id="nav_bar">
+        <div class="header_container h_c" id="nav_bar">
             <div class="header_logo">
                 <img class="header_logo" href="#header_page" src="./assets/logo.png" alt="">
             </div>
@@ -198,11 +200,11 @@
                     <h2>Enquire Us</h2>
                     <div class="contact">
                         <div class="form-container">
-                            <form action="#" method="post">
-                                <input class="input" type="text" name="name" placeholder="Full Name">
-                                <input class="input" type="text" name="email" placeholder="Email">
-                                <textarea class="textarea" name="message" placeholder="Message"></textarea>
-                                <button class="submit">Send</button>
+                            <form  id="form" onsubmit="sendEmail(); reset(); return false">
+                                <input class="input" type="text" name="name" id="name" placeholder="Full Name">
+                                <input class="input" type="text" name="email" id="email" placeholder="Email">
+                                <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
+                                <button type="submit" class="submit">Send</button>
                             </form>
                       </div>
                     </div>
@@ -211,16 +213,9 @@
         </div>
     </footer>  
     <!-- script file -->
-    <script>
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-        if (document.documentElement.scrollTop > 800) {
-            document.getElementById("nav_bar").className = "on_scroll";
-        } else {
-        document.getElementById("nav_bar").className = "header_container";
-        }
-    }
-    </script>
+        <script src="./javascript/contact.js"></script>
+        <script src="./javascript/main_page.js"></script>
+    <!-- smtp port  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

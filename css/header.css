@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+}
+/* header section */
+.header_container{
+    background-color: rgba(224, 224, 224, 0.5);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    z-index: 1;
+    transition: 0.6s;
+    /* border: 2px solid black; */
+}
+.header_logo{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 4%;
+    /* border: 2px solid black; */
+}
+#nav_item{
+    /* border: 2px solid black; */
+    display: inline-block;
+    position: relative;
+    margin-right:25px;
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    justify-content: center;
+    font-weight:normal;
+    font-size: 13px;
+    font-family: Helvetica;
+    transition: 0.4s;
+}
+#nav_item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #e99968;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#nav_item:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+  
+#nav_item:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.4);
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+/* on scroll navbar */
+.on_scroll{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+/* product dropdown menu */
+.product_dropdown{
+    position: fixed;
+    display: none;
+    left:67%;
+}
+.product_dropdown>a{
+    text-align: center;
+    color: black;
+    background-color: #d1d2d2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .product_dropdown>a:hover{
+    background-color: #f4af47;
+  }
+.product_nav_heading:hover>.product_dropdown {
+    display: block;
+  }
+  /* sector dropdown menu */
+.sectors_dropdown{
+    position: fixed;
+    display: none;
+}
+.sectors_dropdown>a{
+    color: black;
+    background-color: #d1d2d2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.sectors_dropdown>a:hover{
+    background-color: #f4af47;
+}
+.sectors_nav_heading:hover>.sectors_dropdown {
+    display: block;
+}

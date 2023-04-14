@@ -5,6 +5,7 @@
     <title>Contact - Shiva Shakthi Constructions</title>
     <link rel="icon" href="./assets/logo_shiva.png" type="image/icon type">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -72,10 +73,11 @@
         <div class="Contact_heading_right"><h1>Contact Us</h1>
             <div class="contact">
                 <div class="form-container">
-                    <form action="#" method="post">
-                        <input class="input_contact" type="text" name="email" placeholder="Email">
-                        <textarea class="textarea_contact" name="message" placeholder="Message"></textarea>
-                        <button class="submit_contact">Send</button>
+                    <form id="form" onsubmit="sendEmail(); reset(); return false">
+                        <input class="input_contact" type="text" name="name" id="name" placeholder="Full Name">
+                        <input class="input_contact" type="text" name="email" id="email" placeholder="Email">
+                        <textarea class="textarea_contact" name="message" id="message" placeholder="Message"></textarea>
+                        <button type="submit" class="submit_contact">Send</button>
                     </form>
                 </div>
             </div>
@@ -89,5 +91,9 @@
             <img class="footer_logo" href="#header_page" src="./assets/logo.png" alt="">
             <h1 class="footer_content_left_heading">Shiva Shakthi Constructions</h1>
     </footer>
+    <!-- script file -->
+    <script src="./javascript/contact.js"></script>
+    <!-- smtp port  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

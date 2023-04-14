@@ -5,6 +5,8 @@
     <title>Sectors-Shiva Shakthi Constructions</title>
     <link rel="icon" href="./assets/logo_shiva.png" type="image/icon type">
     <link rel="stylesheet" href="./css/sector.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -252,10 +254,11 @@
                 <h2>Enquire Us</h2>
                 <div class="contact">
                     <div class="form-container">
-                        <form action="#" method="post">
-                            <input class="input" type="text" name="email" placeholder="Email">
-                            <textarea class="textarea" name="message" placeholder="Message"></textarea>
-                            <button class="submit">Send</button>
+                        <form  id="form" onsubmit="sendEmail(); reset(); return false">
+                            <input class="input" type="text" name="name" id="name" placeholder="Full Name">
+                            <input class="input" type="text" name="email" id="email" placeholder="Email">
+                            <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
+                            <button type="submit" class="submit">Send</button>
                         </form>
                   </div>
                 </div>
@@ -263,5 +266,9 @@
         </div>
     </div>
 </footer>
+<!-- script file -->
+<script src="./javascript/contact.js"></script>
+<!-- smtp port  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
