@@ -55,6 +55,12 @@ a{
     font-weight:normal;
     font-size: 15px;
   }
+  .pro1{
+    padding-top: 20px !important; 
+  }
+  .pro9{
+    padding-bottom: 20px !important;
+  }
   .side_bar_options>div{
     text-align: center;
     padding: 5px 30px 5px 20px;
