@@ -30,6 +30,24 @@
     padding: 5px;
     font-size: 10px;
 }
+/* footer middle part */
+.footer_content_middle>h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 40px;
+
+}
+.socials{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.socialconnect{
+    width: 28px !important;
+    height: 28px !important;
+
+}
 /* footer right side */
 h2{
     font-size: 1rem;
