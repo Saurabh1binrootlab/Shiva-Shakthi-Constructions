@@ -15,7 +15,7 @@ a{
 }
 /* header section */
 .header_container{
-    background-color: rgba(238, 238, 238, 0.395);
+    background-color: rgba(238, 238, 238, 0);
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ a{
 .header_logo{
     padding-left: 30px;
     padding-bottom: 10px;
-    width: 150px;
+    width: 100px;
     height: 70px;
     cursor: pointer;
     transition: 0.4s;
@@ -104,10 +104,10 @@ a{
     position: relative;
     margin-right:15px;
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 56%);
     justify-content: center;
     font-weight:200;
-    font-size: 15px;
+    font-size: 20px;
     font-family: Helvetica;
     transition: 0.4s;
 }
@@ -124,13 +124,14 @@ a{
     width: 0;
 }
 #nav_item:hover:after { 
-    width: 100%; 
+    width: 100%;
     left: 0; 
 }
   
 #nav_item:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(99, 99, 99);
     transform: scale(1.2);
+    font-weight: bold;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
 }
@@ -152,7 +153,7 @@ a{
     position: fixed;
     display: none;
     border-radius: 20px;
-    background-color: #d1d2d3;
+    background-color: #bbbbbb;
 }
 .product_dropdown>a{
     text-align: center;
@@ -233,11 +234,11 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    font-size: 2.8rem;
+    font-size: 3rem;
     width: 100%;
     text-align: center;
     font-weight: 700;
-    color: #343333;
+    color: #ffffff;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     animation-name: focus-in-contract;
@@ -251,7 +252,7 @@ a{
 	@keyframes focus-in-contract {
 			
 		0% {
-			letter-spacing:1em;
+            top: 120%;
 			filter:blur(12px);
 			opacity:0;
 		}

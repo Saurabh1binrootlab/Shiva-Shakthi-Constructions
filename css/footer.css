@@ -1,15 +1,14 @@
 .footer_container{
-    background-color: rgb(237, 149, 91);
+    background-image: url("/assets/project/1.jpg");
+    background-color: rgb(138, 138, 138);
 }
 .footer_content_left{
-    /* border: 2px solid black; */
     float: left;
 }
 .footer_content{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 2px solid black; */
 }
 /* footer left side */
 .footer_content_left_heading{
@@ -46,7 +45,6 @@
 .socialconnect{
     width: 28px !important;
     height: 28px !important;
-
 }
 /* footer right side */
 h2{
@@ -67,7 +65,6 @@ h2{
 	font-size: 14px;
 	font-weight: normal;
 	color:  #000000;
-
 	width: 400px;
 	padding: 18px;
 }

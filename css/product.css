@@ -31,11 +31,12 @@ a{
     grid-template-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
+    align-items: start;
     grid-template-areas:
       "product_container_left product_container_right";
   }
   
-  .product_container_left { grid-area: product_container_left; }
+  .product_container_left { grid-area: product_container_left; position: sticky; }
   
   .product_container_right { grid-area: product_container_right; }
 
