@@ -1,6 +1,6 @@
 .footer_container{
     background-image: url("/assets/project/1.jpg");
-    background-color: rgb(138, 138, 138);
+    /* background-color: rgb(138, 138, 138); */
 }
 .footer_content_left{
     float: left;
@@ -38,13 +38,14 @@
 }
 .socials{
     /* border: 2px solid black; */
-    display: flex;
+    /* display: flex; */
+    left: 10%;
     align-items: center;
     flex-direction: column;
 }
 .socialconnect{
-    width: 28px !important;
-    height: 28px !important;
+    width: 20px !important;
+    height: 20px !important;
 }
 /* footer right side */
 h2{

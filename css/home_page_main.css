@@ -518,7 +518,7 @@ a{
 .our_clients_content_options{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
 
 }
