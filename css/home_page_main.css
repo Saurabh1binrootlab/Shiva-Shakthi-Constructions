@@ -108,7 +108,7 @@ a{
     color: hsl(0, 0%, 100%);
     justify-content: center;
     font-weight:200;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Helvetica;
     transition: 0.4s;
 }
@@ -195,19 +195,19 @@ a{
     display: block;
 }
 /* main page section */
-/* .main_content_title{
+.main_content_title{
     position: absolute;
-    font-size: 23px;
+    font-size: 2rem;
     border-radius: 25px;
-    width: 45%;
+    width: 50%;
     padding: 30px;
     text-align: center;
-    top:500px;
+    top:80%;
     left:30%;
     transform: translate(-50%,-50%);
     background-color: rgba(98, 98, 98, 0.5);
     color: rgb(230, 228, 225);
-} */
+}
 /* .main_content_title{
     position: absolute;
     left: 50%;
@@ -224,10 +224,7 @@ a{
     -webkit-animation: fadeIn 3s;
 }
 */
-.main_content_title_back{
-    
-}
-  .main_content_title{
+  /* .main_content_title{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -236,7 +233,7 @@ a{
     width: 100%;
     text-align: center;
     font-weight: 700;
-    color: orange;
+    color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     animation-name: focus-in-contract;
@@ -246,8 +243,8 @@ a{
 		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-fill-mode: none;
-	}
-	@keyframes focus-in-contract {
+	} */
+	/* @keyframes focus-in-contract {
 			
 		0% {
             top: 120%;
@@ -258,7 +255,7 @@ a{
 			filter:blur(0);
 			opacity:1;
 		}
-	}
+	} */
 .main_video{
     width: 100%;
     height: 50%;
@@ -307,7 +304,7 @@ a{
     font-size: 0.75rem;
 }
 .about_section_content_btn:hover{
-    background-color: #f4af47;
+    background-color: #848484;
     color: white;
     cursor: pointer;
 }
@@ -373,14 +370,14 @@ a{
     margin: 10px 15px 10px 15px;
     /* border: 2px solid black; */
     border-radius: 20px;
-    height: 200px;
-    width: 30%;
+    height: 170px;
+    width: 26%;
     
 }
 .why_section_content_options_header{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -498,7 +495,7 @@ a{
     font-size: 0.5rem;
   }
   .project_section_container_more-btn-content:hover{
-    background-color: rgb(234, 143, 53);
+    background-color: rgb(95, 95, 95);
     color: white;
     cursor: pointer;
 }
