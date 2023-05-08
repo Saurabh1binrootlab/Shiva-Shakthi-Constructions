@@ -224,6 +224,7 @@ a{
     -webkit-animation: fadeIn 3s;
 }
 */
+.main_content_title_back{}
   .main_content_title{
     position: absolute;
     left: 50%;
